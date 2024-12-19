@@ -1,0 +1,331 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ninestars Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href={% static "assets/img/favicon.png" %} rel="icon">
+  <link href={% static "assets/img/apple-touch-icon.png" %} rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={% static "assets/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/icofont/icofont.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/boxicons/css/boxicons.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/venobox/venobox.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/owl.carousel/assets/owl.carousel.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/aos/aos.css" %} rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href={% static "assets/css/style.css" %} rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Ninestars - v2.0.0
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex">
+
+      <div class="logo mr-auto">
+        <a href={% url 'index' %} class="logo">
+          <img src={% static "/assets/img/company/company.png" %} alt="NTL" class="img-fluid pl-md-5" style="max-height: 50px; ">
+        </a>
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header"></a></li>
+          <li class="active"><a href="#header"></a></li>
+          <li><a href={% url 'ncr21' %}>NCR Selfserv TM 21</a></li>
+          <li ><a href= {% url 'ncr27' %}>NCR Selfserv TM 27</a></li>
+          <li ><a href={% url 'ncr61' %}>NCR Selfserv TM 61</a></li>
+          <li class="active"><a href={% url 'ncr64' %}>NCR Selfserv TM 64</a></li>
+          <li><a href={% url 'ncrSE' %}>NCR Selfserv SE Cash</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- Main content -->
+  <div class="container my-5" style="padding-top: 100px;">
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <!-- Bootstrap Carousel with Indicators -->
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <!-- Carousel Indicators (Styled Dots) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <!-- <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+              </div>
+          
+              <!-- Carousel Inner -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" style="height: 400px;">
+                  <img src={% static "/assets/img/products/selfserv64.webp" %} alt="NCR SelfServ 64" class="img-fluid">
+                </div>
+                <div class="carousel-item" style="height: 400px;">
+                  <img src={% static "/assets/img/products/selfserve64-all.jpg" %} alt="NCR SelfServ 27" class="img-fluid">
+                </div>
+                <!-- <div class="carousel-item" style="height: 400px;">
+                  <img src="https://www.bluebytes.org/assets/images/ss24-front-19inch-open-collar-all-lights-green-3.webp" alt="NCR SelfServ 27" class="img-fluid">
+                </div> -->
+              </div>
+            </div>
+         
+          <div style="padding-top: 5px; padding-bottom: 5px; background-color: rgba(255, 218, 118, 0.548); margin-top: 30px;  background-position: 0 bottom; background-size: 100% 2px; background-repeat: no-repeat; border-left: 4px solid red; padding-left: 10px;">
+            <h1 style="text-align: start;">  NCR SelfServ 64</h1> 
+            <h4 style=" font-size: 18px; text-align: start;">Interior Freestanding Cash Dispense ATM</h4>
+        </div>
+            <p class="mt-4 text-justify">
+                The NCR SelfServ 64 has been designed to enhance the consumer experience, reduce costs and
+generate revenue. Digitally-inspired design taking your brand to the next level whilst adhering to the
+global accessibility standards. Powered by the new enhanced Scalable Recycler, NCR SelfServ 64 is the
+perfect solution to future-proof your ATM network
+            </p>
+           
+
+            <style>
+                .feature-section {
+                  background-color: #f8f9fa;
+                  padding: 2rem;
+                  border-radius: 8px;
+                  margin-bottom: 1.5rem;
+                }
+                .feature-icon {
+                  font-size: 24px;
+                  color: #28a745; /* Green color for the icons */
+                }
+                .feature-heading {
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  color: #333;
+                }
+                .feature-description {
+                  font-size: 0.95rem;
+                  color: #666;
+                }
+              </style>
+         
+         
+         <div class="container my-5">
+  
+            <!-- Experience Section -->
+            <div class="feature-section text-center border rounded  p-4 mb-4 bg-white mx-auto">
+              <img src="https://cdn-icons-png.freepik.com/256/10845/10845509.png?semt=ais_hybrid" alt="Experience Icon" width="50" height="50">
+    
+              <h4 class="feature-heading">Experience</h4>
+              <p class="feature-description text-justify">
+                For your customers and staff.
+                Mobile interactions at the forefront coupled
+                with Software-driven performance and greater
+                sense of consumer privacy
+</p>
+            </div>
+          
+            <!-- Availability Section -->
+            <div class="feature-section text-center border rounded  p-4 mb-4 bg-white mx-auto">
+              <img src="https://cdn-icons-png.flaticon.com/512/7959/7959358.png" alt="Efficiency Icon" width="50" height="50">
+    
+              <h4 class="feature-heading">Efficient</h4>
+              <p class="feature-description text-justify">
+                - Helping Financial Institutions lower
+                their total cost of ownership and meet wider
+                corporate social responsibility objectives whilst
+                delivering service excellence though wide
+                range of software tools.</p>
+            </div>
+          
+            <!-- Security Section -->
+            <div class="feature-section text-center border rounded  p-4 mb-4 bg-white mx-auto">
+              <img src="https://cdn-icons-png.flaticon.com/512/4727/4727247.png" alt="Agility Icon" width="50" height="50">
+  
+              <h4 class="feature-heading">Agility
+            </h4>
+              <p class="feature-description text-justify">
+                - Versatile device configurations.
+                Dynamic software-driven capabilities, split
+                cassette optiona, interchangeable interfaces
+                and modular ATM design for best results and
+                performance. </p>
+            </div>
+          
+          </div>
+          
+            <!-- Video Section -->
+            <!-- <div class="video-section">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/watch?v=NwIhwK_0ygw&t=5s" title="Video unavailable" allowfullscreen></iframe>
+              </div>
+            </div> -->
+          </div>
+          
+          <!-- Custom CSS for Carousel Indicators -->
+          <style>
+            .carousel-indicators [data-bs-target] {
+              margin-top: 20px;
+              width: 12px;
+              height: 8px;
+              background-color: gray;
+              border: 2px solid white;
+              border-radius: 50%;
+              opacity: 0.5;
+            }
+            .carousel-indicators .active {
+              background-color: blue;
+              border: 2px solid black;
+              opacity: 1;
+            }
+          </style>
+          
+          <!-- Include Bootstrap JS -->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+          
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5" style="padding-top: 30px;">
+            <h4>Technical Specifications</h4>
+            <h4>Product Dimensions</h4>
+            <ul>
+                <li>Height: 56.37” (1,432mm)</li>
+                <li>Width Safe: 20.47” (520mm)</li>
+                <li>Depth Safe: 36.6” (930mm) + Collar: 9.4" (240mm)</li>
+                <li>Weight CEN I Safe: 1,400 lbs (635kg)</li>
+            </ul>
+        
+            <h4>Consumer Interface</h4>
+            <ul>
+                <li>Display - 15” LCD multi-touch, optional privacy filter, sunlight-readable</li>
+                <li>Dynamic Colored MEEIs, Dynamic Mood Lighting (optional)</li>
+                <li>Intelligent Pocket Shutter</li>
+                <li>Keyboard - EPP (PCI compliant) with optional Pin Shield</li>
+                <li>Tamper Resistant Card Readers - Smart Dip, MRCW</li>
+                <li>Contactless - Integrated reader (via card, smartphone, or smartwatch)</li>
+                <li>Biometrics - Fingerprint reader (optional)</li>
+                <li>Audio - Optional high-quality public audio or sound jack with volume control</li>
+                <li>Barcode Reader (optional)</li>
+            </ul>
+        
+            <h4>Media Handling 3.0 Technology</h4>
+            <ul>
+                <li>Cash Recycling: Scalable Recycler 3.0, scalable from 3 to 6 cassettes</li>
+                <li>Up to 8 denominations recycling, up to 300 notes bunch size</li>
+                <li>Cassette Capacities:</li>
+                <ul>
+                    <li>Recycling Cassette: up to 3000 notes, 332mm</li>
+                    <li>Deposit Cassette: up to 3300 notes, 363mm</li>
+                    <li>Split Cassette: 700 notes (77mm) + 1300 notes (143mm)</li>
+                </ul>
+                <li>Exception bin for unfit, suspect & counterfeit notes (75mm + 55mm + 10mm)</li>
+                <li>Foreign object management and secure transport</li>
+                <li>Check Deposit: Scalable Check Processing Module 2.0 (optional)</li>
+                <ul>
+                    <li>Storage capacity: 5 bunch up to 400 items</li>
+                    <li>Endorse and return, RGB, Infrared, and Ultraviolet recognition</li>
+                </ul>
+                <li>Coin Dispense: SmartHopper Coin Module (optional)</li>
+                <ul>
+                    <li>Up to 11 coin denominations</li>
+                    <li>Storage capacity (standard): up to 11.3kg (24.9 lbs)</li>
+                </ul>
+            </ul>
+        
+            <h4>Printers</h4>
+            <ul>
+                <li>Graphic Thermal Printer</li>
+                <li>Journal Printer (optional)</li>
+            </ul>
+        
+            <h4>Security</h4>
+            <ul>
+                <li>USB Protection and Parts Validation</li>
+                <li>Portrait Camera, Cash Camera (optional)</li>
+                <li>Consumer Mirrors (optional)</li>
+                <li>NCR ATM Endpoint Security Solutions (optional)</li>
+                <li>Skimming Protection Solution (SPS) (optional)</li>
+                <li>Range of Alarms (optional)</li>
+                <li>UL437 cabinet locks</li>
+                <li>Safes: CEN I, CEN III GasEx, CEN IV GasEx</li>
+            </ul>
+        
+            <h4>Environmental</h4>
+            <ul>
+                <li>Exterior TTW: -31°F to 122°F (-35°C to 50°C)</li>
+                <li>Humidity: 10% to 80%</li>
+                <li>Interior TTW: 50°F to 104°F (10°C to 40°C)</li>
+                <li>Humidity – 20% to 80%</li>
+            </ul>
+        
+            <h4>Servicing</h4>
+            <ul>
+                <li>Rear access</li>
+                <li>Self Service Assistant (SSA)</li>
+                <li>Unique adjustable TTW sleeve</li>
+            </ul>
+        
+            <h4>Operating Platform</h4>
+            <ul>
+                <li>Intel Core - i3, i5, or i7</li>
+                <li>8GB, 16GB, 32GB, or 64GB RAM</li>
+                <li>240GB or 480GB SSD Hard Drive (with 2nd SSD)</li>
+            </ul>
+        
+            <h4>Software</h4>
+            <ul>
+                <li>Windows® 10 ready</li>
+                <li>NCR Software Suite</li>
+            </ul>
+        
+            <h4>Additional Features</h4>
+            <ul>
+                <li>Uninterrupted Power Supply</li>
+                <li>Bluetooth</li>
+                <li>Dual Wireless</li>
+            </ul>
+        </div>
+        
+    
+    </div>
+  </div>
+
+
+<!-- Vendor JS Files -->
+<script src= {% static "assets/vendor/jquery/jquery.min.js" %}></script>
+<script src= {% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}></script>
+<script src= {% static "assets/vendor/jquery.easing/jquery.easing.min.js" %}></script>
+<script src= {% static "assets/vendor/php-email-form/validate.js" %}></script>
+<script src= {% static "assets/vendor/isotope-layout/isotope.pkgd.min.js" %}></script>
+<script src= {% static "assets/vendor/venobox/venobox.min.js" %}></script>
+<script src= {% static "assets/vendor/owl.carousel/owl.carousel.min.js" %}></script>
+<script src= {% static "assets/vendor/aos/aos.js" %}></script>
+
+<!-- Template Main JS File -->
+<script src= {% static "assets/js/main.js" %}></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

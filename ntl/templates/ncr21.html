@@ -1,0 +1,327 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ninestars Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href={% static "assets/img/favicon.png" %} rel="icon">
+  <link href={% static "assets/img/apple-touch-icon.png" %} rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={% static "assets/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/icofont/icofont.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/boxicons/css/boxicons.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/venobox/venobox.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/owl.carousel/assets/owl.carousel.min.css" %} rel="stylesheet">
+  <link href= {% static "assets/vendor/aos/aos.css" %} rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href={% static "assets/css/style.css" %} rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Ninestars - v2.0.0
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex">
+
+      <div class="logo mr-auto">
+      <a href={% url 'index' %} class="logo">
+          <img src={% static "/assets/img/company/company.png" %} alt="NTL" class="img-fluid pl-md-5" style="max-height: 50px; ">
+        </a>
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href={% url 'ncr21' %}>NCR Selfserv TM 21</a></li>
+          <li><a href= {% url 'ncr27' %}>NCR Selfserv TM 27</a></li>
+          <li><a href={% url 'ncr61' %}>NCR Selfserv TM 61</a></li>
+          <li><a href={% url 'ncr64' %}>NCR Selfserv TM 64</a></li>
+          <li><a href={% url 'ncrSE' %}>NCR Selfserv SE Cash</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- Main content -->
+  <div class="container my-5" style="padding-top: 100px;">
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <!-- Bootstrap Carousel with Indicators -->
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <!-- Carousel Indicators (Styled Dots) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <!-- <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+              </div>
+          
+              <!-- Carousel Inner -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" style="height: 400px;">
+                  <img src= {% static "/assets/img/products/selfserv21.jpg" %} alt="NCR SelfServ 27" class="img-fluid">
+                </div>
+                <div class="carousel-item" style="height: 400px;">
+                  <img src={% static "/assets/img/products/selfserv21-all-1.webp" %} alt="NCR SelfServ 27" class="img-fluid">
+                </div>
+                <!-- <div class="carousel-item" style="height: 400px;">
+                  <img src="https://www.bluebytes.org/assets/images/ss24-front-19inch-open-collar-all-lights-green-3.webp" alt="NCR SelfServ 27" class="img-fluid">
+                </div> -->
+              </div>
+            </div>
+            <div style="padding-top: 5px; padding-bottom: 5px; background-color: rgba(255, 218, 118, 0.548); margin-top: 30px;  background-position: 0 bottom; background-size: 100% 2px; background-repeat: no-repeat; border-left: 4px solid red; padding-left: 10px;">
+              <h1 style="text-align: start;">NCR Selfserv TM 21</h1> 
+              <h4 style=" font-size: 18px; text-align: start;">Compact Lobby Cash Despenser</h4>
+          </div>
+            <p class="mt-4 text-justify">
+                Introducing NCR latest innovation in the small footprint, cash dispense space. NCR SelfServ™ 21 helps
+financial institutions meet corporate environmental sustainability goals, reduce total cost of ownership
+and manage risk, all while benefiting from ease of deployment.
+            </p>
+           
+
+            <style>
+                .feature-section {
+                  background-color: #f8f9fa;
+                  padding: 2rem;
+                  border-radius: 8px;
+                  margin-bottom: 1.5rem;
+                }
+                .feature-icon {
+                  font-size: 24px;
+                  color: #28a745; /* Green color for the icons */
+                }
+                .feature-heading {
+                  font-weight: bold;
+                  font-size: 1.2rem;
+                  color: #333;
+                }
+                .feature-description {
+                  font-size: 0.95rem;
+                  color: #666;
+                }
+              </style>
+         
+         
+         <div class="container my-5">
+  
+            <!-- Experience Section -->
+            <div class="feature-section text-center border rounded  p-4 mb-4 bg-white mx-auto">
+              <img src="https://cdn-icons-png.flaticon.com/512/8566/8566387.png" alt="Experience Icon" width="50" height="50">
+    
+              <h4 class="feature-heading">Experience</h4>
+              <p class="feature-description text-justify">
+                Brand perception depends
+on the customer experience. SelfServ 21
+offers your consumers a modern, digital-first
+experience with multi-touch display, integrated
+contactless card reader and dynamically
+adjustable media entry and exit indicators.
+Coupled with NCR Enterprise Software
+and ATM Marketing, SelfServ 21 unlocks a
+personlised user flow and increases ROI.
+</p>
+            </div>
+          
+            <!-- Availability Section -->
+            <div class="feature-section text-center border rounded  p-4 mb-4 bg-white mx-auto">
+              <img src=" https://cdn-icons-png.flaticon.com/512/3588/3588210.png" alt="Experience Icon" width="50" height="50">
+    
+              <h4 class="feature-heading">Availability</h4>
+              <p class="feature-description text-justify">
+                ATM uptime matters. SelfServ
+21 is powered by S2 Media Dispense Module.
+It has market-leading cassette capacity and
+drives longer replenishment cycles, keeping
+your device online for longer. With greater
+FRUs and State of Health indicators, S2 helps
+you get your ATM back up and running faster
+than other devices on the market. It uses 8%
+less power than its predecessor, letting you
+focus investments on other channels.</p>
+            </div>
+          
+            <!-- Security Section -->
+            <div class="feature-section text-center border rounded  p-4 mb-4 bg-white mx-auto">
+              <img src=" https://cdn-icons-png.freepik.com/512/10276/10276315.png" alt="Experience Icon" width="50" height="50">
+    
+              <h4 class="feature-heading">Security
+            </h4>
+              <p class="feature-description text-justify">
+                —SelfServ 21 has security built
+in. The combination of S2 Media Dispense
+Module and integrated cash exit and
+consumer portrait cameras protects
+your device against cash trap attacks and
+transaction reversal fraud. With the latest
+Skimming Protection Solution and NCR Secure,
+your consumers are protected against card
+skimming fraud too. </p>
+            </div>
+          
+          </div>
+          
+            <!-- Video Section -->
+            <!-- <div class="video-section">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/watch?v=NwIhwK_0ygw&t=5s" title="Video unavailable" allowfullscreen></iframe>
+              </div>
+            </div> -->
+          </div>
+          
+          <!-- Custom CSS for Carousel Indicators -->
+          <style>
+            .carousel-indicators [data-bs-target] {
+              margin-top: 20px;
+              width: 12px;
+              height: 8px;
+              background-color: gray;
+              border: 2px solid white;
+              border-radius: 50%;
+              opacity: 0.5;
+            }
+            .carousel-indicators .active {
+              background-color: blue;
+              border: 2px solid black;
+              opacity: 1;
+            }
+          </style>
+          
+          <!-- Include Bootstrap JS -->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+          
+      <div class="col-lg-1"></div>
+          <div class="col-lg-5" style="padding-top: 30px;">
+        <h4>Technical Specifications</h4>
+        <h4>Product Dimensions</h4>
+        <ul>
+          <li>Height: 57.4” (1459mm), with CEN 1: 55.7” (1414mm)</li>
+          <li>Width: 38.6” (982mm), with CEN 1: 17.7” (450mm)</li>
+          <li>Depth: 35.1” (892mm), with CEN 1: 31.3” (794mm)</li>
+          <li>Weight: 1,407 lbs (638kg), CEN 1 safe: 1,146 lbs (520kg)</li>
+        </ul>
+    
+        <h4>Consumer Interface</h4>
+        <ul>
+          <li>Display - 15” LCD multi-touch enabled, brightened color LCD with privacy feature</li>
+          <li>Dynamic active customizable color LEDs, directional and pulsing user guidance MEEIs or static green option</li>
+          <li>Keyboard - Recessed Encrypting PIN Pad (Polycarbonate or stainless steel)</li>
+          <li>Card Reader - EMV Ready, Smart Dip or Motorized IMCRW with Card Return on Power Failure (CROPF) and MEEI</li>
+          <li>Contactless enabled – Integrated reader (via card, smartphone, or smartwatch)</li>
+          <li>Biometrics ready</li>
+          <li>Audio - Optional high-quality public and/or private audio sound jack with volume control</li>
+          <li>Barcode Reader - 2D Barcode supports both 1D and 2D documents</li>
+        </ul>
+    
+        <h4>Media Handling 2.0 Technology</h4>
+        <ul>
+          <li>Cash Dispense: S2 Media Dispense Module</li>
+          <li>Up to 60-note bunch size, 346mm cassette up to 2,800 notes</li>
+          <li>Vacuum-based with adaptive pick technology</li>
+          <li>Configurable purge bin with retract and single-note divert</li>
+          <li>Programmable carriage with built-in anti-cash trapping technology</li>
+          <li>4 High or 5 High Options</li>
+        </ul>
+    
+        <h4>Dispenser</h4>
+        <ul>
+          <li>S2 Media Dispense Module, 2-4 cassettes, bunch presenter</li>
+          <li>Configurable purge bin capability with retract and single-note divert</li>
+          <li>Anti-overfill cassette</li>
+        </ul>
+    
+        <h4>Printers</h4>
+        <ul>
+          <li>Receipt Printer - 5" Roll Thermal Printer, capable of e-Receipts to mobile devices</li>
+          <li>Electronic Journal</li>
+          <li>Receipt Printer - 80mm 203dpi graphics thermal printer with options - retract, capture, or 2ST (two-sided thermal printing)</li>
+          <li>Journal Printer - 80mm 203dpi graphics thermal printer (Journal available as default)</li>
+        </ul>
+    
+        <h4>Security</h4>
+        <ul>
+          <li>USB Protection and Parts Validation</li>
+          <li>Options - Fraudulent Device Inhibition, Enhanced Card Drive, Skimming Protection Solution (SPS) (MCMW only), Ink-staining, Solidcore Suite for APTRA</li>
+          <li>Integrated Flush Skimming Protection Solution, cameras for cash exit and consumer portrait</li>
+          <li>Alarms - Standard security alarm</li>
+          <li>UL437 topbox lock</li>
+          <li>Safes - CEN 1, CEN3, ENV</li>
+        </ul>
+    
+        <h4>Environmental</h4>
+        <ul>
+          <li>Temperature – Standard: 50°F to 104°F (10°C to 40°C)</li>
+          <li>Humidity – 20% to 80%</li>
+          <li>Acoustics – Sound power 65db (A) idle, 68db (A) operating</li>
+          <li>Idle Power: 72 Watts</li>
+        </ul>
+    
+        <h4>Servicing</h4>
+        <ul>
+          <li>Rear access or Front/Rear access with Self Service Assistant (SSA) and Auto Supervisory Entry</li>
+          <li>7” LCD Control Operator Panel (Rear access only)</li>
+        </ul>
+    
+        <h4>Operating Platform</h4>
+        <ul>
+          <li>Intel Celeron, 7th Gen i3 and i5 processor options</li>
+          <li>2GB, 4GB, 8GB, or 16GB RAM</li>
+          <li>250GB hard drive or 240GB SSD, optional secondary 1TB HDD</li>
+          <li>DVD-RW drive</li>
+        </ul>
+    
+        <h4>Software</h4>
+        <ul>
+          <li>Windows 7 or Windows 10</li>
+          <li>APTRA software suite or APTRA XFS</li>
+        </ul>
+    
+        <h4>Additional Information</h4>
+        <ul>
+          <li>Configuration and feature options dependent on Country and Region</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src= {% static "assets/vendor/jquery/jquery.min.js" %}></script>
+  <script src= {% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}></script>
+  <script src= {% static "assets/vendor/jquery.easing/jquery.easing.min.js" %}></script>
+  <script src= {% static "assets/vendor/php-email-form/validate.js" %}></script>
+  <script src= {% static "assets/vendor/isotope-layout/isotope.pkgd.min.js" %}></script>
+  <script src= {% static "assets/vendor/venobox/venobox.min.js" %}></script>
+  <script src= {% static "assets/vendor/owl.carousel/owl.carousel.min.js" %}></script>
+  <script src= {% static "assets/vendor/aos/aos.js" %}></script>
+
+  <!-- Template Main JS File -->
+  <script src= {% static "assets/js/main.js" %}></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
