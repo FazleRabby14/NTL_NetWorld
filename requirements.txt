@@ -1,6 +1,7 @@
 asgiref==3.8.1
 Django==5.1.4
-mysqlclient==2.2.6
-PyMySQL==1.1.1
+mysqlclient==2.2.6  # For MySQL support; use this if MySQL libraries are correctly installed
+PyMySQL==1.1.0  # Lightweight alternative to mysqlclient
 sqlparse==0.5.3
 tzdata==2024.2
+
