@@ -9,6 +9,6 @@ status = 200
   command = "apt-get update && apt-get install -y libmysqlclient-dev && pip install -r requirements.txt && npm install && npm run build"
 
 [build.environment]
-  PYTHON_VERSION = "3.13.1"
-  MYSQLCLIENT_CFLAGS = "-I/usr/include/mysql"
-  MYSQLCLIENT_LDFLAGS = "-L/usr/lib/mysql -lmysqlclient"
+PYTHON_VERSION = "3.12.3"  # Use a stable Python version
+MYSQLCLIENT_CFLAGS = "-I/usr/include/mysql"
+MYSQLCLIENT_LDFLAGS = "-L/usr/lib/mysql -lmysqlclient"
