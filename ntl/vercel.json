@@ -1,17 +1,19 @@
 {
     "version": 2,
     "builds": [
-      { "src": "ntl/wsgi.py", "use": "@vercel/python", "config": {"maxLambdaSize":"15mb", "runtime":"python3.11.3"} }
+      {
+        "src": "ntl/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "15mb",
+          "runtime": "python3.11.3"
+        }
+      }
     ],
-    // "routes": [
-    //   { "src": "/(.*)", "dest": "ntl/wsgi.py" }
-    // ],
     "routes": [
-    {
-      "src": "/(.*)",
-      "destination": "/"
-    }
-  ],
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+      {
+        "src": "/(.*)",
+        "dest": "ntl/wsgi.py"
+      }
+    ]
   }
-  
