@@ -1,6 +1,5 @@
-
-
 {
+    "version": 2,
     "builds": [
       {
         "src": "ntl/wsgi.py",
@@ -9,6 +8,10 @@
           "maxLambdaSize": "15mb",
           "runtime": "python3.12.3"
         }
+      },
+      {
+        "src": "static/*",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
@@ -18,3 +21,4 @@
       }
     ]
   }
+  
